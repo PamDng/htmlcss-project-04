@@ -91,6 +91,11 @@
         <!-- reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Animate -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
     <body>
         <!-- header -->
@@ -144,7 +149,9 @@
                 <!-- Hero -->
                 <section class="hero">
                     <section class="hero__content">
-                        <h1 class="hero__heading">
+                        <h1
+                            class="hero__heading wow animate__animated animate__bounce"
+                        >
                             Exceptional dental care for all ages.
                         </h1>
                         <p class="hero__desc">
@@ -163,7 +170,7 @@
                             <img
                                 src="./assets/img/dental-2.jpg"
                                 alt=""
-                                class="hero__img"
+                                class="hero__img wow"
                             />
                             <img
                                 src="./assets/img/dental-1.webp"
@@ -192,7 +199,7 @@
                             <img
                                 src="./assets/img/dental-2.jpg"
                                 alt=""
-                                class="service__img"
+                                class="service__img wow animate__animated animate__bounce"
                             />
                         </figure>
                         <div>
@@ -817,5 +824,20 @@
                 </div>
             </div>
         </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW({
+                boxClass: "wow",
+                animateClass: "animated",
+                offset: 0,
+                mobile: true,
+                live: true,
+            }).init();
+        </script>
     </body>
 </html>
